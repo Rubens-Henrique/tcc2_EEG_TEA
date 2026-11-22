@@ -63,6 +63,7 @@ TCC_EEG/
 ├── 05_fusao_multi_paradigma.py                    # Fase 4: Especialistas por Paradigma e Super-Fusão (3 exames)
 ├── 06_extracao_7_paradigmas_5_bandas.py           # Fase 5: Extração paralela dos 7 exames (.bdf e .vhdr) nas 5 bandas
 ├── 07_estudo_diferencial_ablacao.py               # Fase 5: Ablação de bandas/lobos, análise de interferência e Fusão (83,50%)
+├── 08_validacao_auditoria_blindada.py             # Fase 6: Validação auditada sem canais oculares (15ch Riemann) em 10 sorteios
 ├── Documentacao_Processo.md                       # Relatório científico completo de todas as fases, tabelas e descobertas
 ├── Plano_TCC.md                                   # Planejamento metodológico inicial do projeto
 ├── ablacao_bandas_7_exames.png                    # Mapa de calor: relevância vs. interferência das 5 bandas nos 7 exames
@@ -142,4 +143,8 @@ Como os arquivos brutos de EEG (`.bdf` e `.vhdr`) e as matrizes de cache (`.npy`
 5. **Regerar todas as Matrizes de Confusão (`.png`):**
    ```powershell
    python 04_graficos.py
+   ```
+6. **Rodar a Fase 6 (Validação Auditada sem Canais Oculares `Fp1, Fp2, F7, F8` + Empilhamento Aninhado em 10 Sorteios):**
+   ```powershell
+   python 08_validacao_auditoria_blindada.py
    ```
